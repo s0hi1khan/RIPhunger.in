@@ -110,7 +110,7 @@
 #home::before{
     content: "";
     position: absolute;
-    background: url(../img/breakfast_meal_wall.jpg) no-repeat center center;
+    background: url(breakfast_meal_wall.jpg) no-repeat center center;
     top: 0px;
     left: 0px;
     z-index: -1;
@@ -191,7 +191,7 @@
     /* border: 2px solid yellow; */
     content: "";
     position: absolute;
-    background: url(../img/clients_wall.jpg) no-repeat center center;
+    background: url(clients_wall.jpg) no-repeat center center;
     z-index: -1;
     left: 0px;
     width: 100%;
@@ -220,7 +220,7 @@
 }
 #contact::before{
     content: "";
-    background: url(../img/food_candy_wall.jpg) no-repeat center;
+    background: url(food_candy_wall.jpg) no-repeat center;
     position: absolute;
     left: 0px;
     z-index: -1;
