@@ -1,0 +1,301 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding: 0;
+}
+/* CSS Variable */
+:root{
+    --navbar-height:59px
+}
+
+.container{
+    position: relative;
+}
+
+/* styling */
+.navbar{
+    /* border: 2px solid green; */
+    position: sticky;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+}
+/* navbar style: logo and img */
+#logo{
+    /* border:2px solid greenyellow; */
+    margin: 8px 23px;
+}
+#logo img{
+    /* border: 2px solid red; */
+    width: 6rem;
+    border-radius: 26px;
+}
+#logo img:hover{
+    cursor: pointer;
+}
+
+/* navbar style: list styling */
+.navbar ul{
+    display: flex;
+}
+.navbar::before{
+    content: "";
+    background-color: rgba(26, 25, 25, 0.507);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.item{
+    /* border: 2px solid blue; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+.item a{
+    display: block;
+    padding: 6px 12px;
+    margin: 0px 9px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: white; */
+    color: white;
+    font-style: oblique;
+}
+.item a:hover{
+    background-color: white;
+    color: black;
+    /* text-shadow: 1px 1px  black; */
+    border: 1px solid black;
+}
+/* call button */
+#call img{
+    /* border: 2px solid green; */
+    width: 80px;
+    border-radius: 53px;
+    position:absolute;
+    right: 15px;
+    top: 15px;
+    padding: 0px;
+    cursor: pointer;
+
+    animation: call 0.6s infinite ease-in-out ;
+}
+@keyframes call {
+     33.3%{
+         transform: rotate(90deg);
+     }
+}
+
+
+/* home section */
+#home{
+    /* border: 2px solid blue;  */
+    color: black;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    margin: auto;
+    text-align: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(../img/breakfast_meal_wall.jpg) no-repeat center center;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 101%;
+}
+#home p{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px black;
+    color: whitesmoke;
+}
+
+/* services section */
+.center{
+    margin: auto;
+    /* border: 2px solid violet; */
+    text-align: center;
+}
+.services{
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: row;
+}
+.services .box{
+    border: 2px solid red;
+    background-color: rgb(241, 238, 238);
+    display: flex;
+    flex-direction: column;
+    margin: 20px 8px;
+    padding: 20px 29px;
+    border-radius: 32px;
+    
+}
+.services .box img{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}
+
+.services .box p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+/* social */
+#social-section{
+    /* border: 2px solid brown; */
+    position: relative; 
+}
+#soc_head h1{
+    font-size: 2.8rem;
+    text-align: center;
+    width: 98vw;
+    padding: 12px;
+    margin: 10px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1.1px 1.1px  white;
+    color: black;
+}
+#social{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-item img{
+    /* border: 2px solid green; */
+    height: 6rem;
+    padding: 0px;
+    margin:0px 8px;
+    cursor: pointer;
+}
+#social-section::before{
+    /* border: 2px solid yellow; */
+    content: "";
+    position: absolute;
+    background: url(../img/clients_wall.jpg) no-repeat center center;
+    z-index: -1;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity:0.2;
+}
+/* client */
+
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-item img{
+    /* border: 2px solid green; */
+    height: 8rem;
+    padding: 0px;
+    margin:0px 8px;
+    cursor: pointer;
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url(../img/food_candy_wall.jpg) no-repeat center;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box input{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#contact-box textarea{
+     width: 100%;
+     padding: 0.5rem;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+    height: 100%;
+    font-size: 1.1rem;
+}
+
+
+
+
+/* utility classes */
+.h-primary{
+    /* border: 2px solid pink; */
+    font-size: 3.2rem;
+    text-align: center;
+    width: 98vw;
+    padding: 12px;
+    margin: 10px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1.1px 1.1px  black;
+    color: rgba(207, 208, 240, 0.918);
+}
+.h-secondary{
+    /* border: 2px solid yellow; */
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn{
+    padding: 6px 16px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    margin: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+ 
+

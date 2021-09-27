@@ -1,0 +1,41 @@
+.item {
+    font-size: 0.8rem;
+}
+.item a{
+    margin: 0px;
+    margin-bottom: 3px;
+}
+#logo img{
+    /* border: 2px solid red; */
+    width: 4rem;
+}
+#call img{
+    width: 4rem;
+}
+#home{
+    /* border: 2px solid green; */
+    padding: 29px 0px;
+    /* height: 353px; */
+}
+#home p{
+    margin: 3px 12px;
+    font-size: 0.6rem;
+}
+.services {
+    flex-direction: column;
+    overflow: hidden;
+}
+.navbar {
+    flex-direction: column;
+}
+#contact-box form {
+    width: 75%;
+}
+
+.h-primary{
+    /* border: 2px solid pink; */
+    font-size: 1.2rem;
+    padding: 3px;
+    margin: 8px auto;
+   
+}
